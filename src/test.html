@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test HTML</title>
+</head>
+<style>
+    .menu-bar {
+        background: #333;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .menu-bar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .menu-bar li {
+        margin: 0;
+    }
+
+    .menu-bar a {
+        display: block;
+        color: #fff;
+        padding: 12px 20px;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+
+    .menu-bar a:hover {
+        background: #4fc3f7;
+        color: #222;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- Menu Bar Start -->
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <h1>Welcome to Test HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Menu Bar End -->
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="todo-list">
+            <h2>Todo List</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Date</th>
+                        <th>Progress</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Assigned To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Design homepage</td>
+                        <td>2024-06-10</td>
+                        <td>50%</td>
+                        <td>High</td>
+                        <td>In Progress</td>
+                        <td>Alice</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Write documentation</td>
+                        <td>2024-06-12</td>
+                        <td>20%</td>
+                        <td>Medium</td>
+                        <td>Not Started</td>
+                        <td>Bob</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Test contact form</td>
+                        <td>2024-06-15</td>
+                        <td>0%</td>
+                        <td>Low</td>
+                        <td>Not Started</td>
+                        <td>Charlie</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer style="background:#222;color:#fff;padding:20px 0;text-align:center;margin-top:40px;">
+        <div>Contact us: <a href="mailto:info@example.com" style="color:#4fc3f7;">info@example.com</a> | Phone: (123)
+            456-7890</div>
+        <div>123 Main St, City, Country</div>
+        <div>&copy; 2025 Hello-git. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
